@@ -48,6 +48,13 @@
 
 \lstset{style=mystyle}
 
+\let\oldforall\forall
+\renewcommand{\forall}{\oldforall \, }
+
+\let\oldexist\exists
+\renewcommand{\exists}{\oldexist \: }
+
+\newcommand\existu{\oldexist! \: }
 
 \setlength{\parskip}{1em}
 \setlength{\parindent}{0pt}
