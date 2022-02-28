@@ -1,5 +1,11 @@
 \chapter{Introduzione}
-\section{Argomenti del corso}
+
+In generale non è consigliato acquistare nessun libro, però in esso sono contenuti molti esercizi e può quindi essere comodo.
+
+\section{Argomenti di Algebra}
+
+Questi argomenti prenderanno circa $\frac{2}{3}$ del corso.
+
 \subsection{Congruenze e sistemi di Congruenze}
 % da trasformare in esempio
 Esempio:
@@ -37,6 +43,9 @@ Valore 1 argomento di algebra
 
 Posso diagonalizzare se posso scrivere prodotto di 3 quadrati, dove la matrice centrale è una matrice diagonale
 
+\section{Argomenti di Matematica discreta}
+
+Questi argomenti prenderanno circa $\frac{1}{3}$ del corso
 \subsection{Grafi}
 
 Valore 2
@@ -51,6 +60,44 @@ In questo esempio ci accorgiamo che un villaggio è isolato e un villaggio ha mo
 \subsection{Metodi di conteggio}
 
 Vale1 e sicuramente sarà presente al secondo pariale.
+Questo argomento è molto dettagliato nel libro
 
 Un'esempio sarà calcolare le diverse sequenze binarie (sequenze di \textit{zeri} ed \textit{uni})
+
+Con 8 cifre dove abbiamo 6 uni e 2 zeri inizio a contare.
+
+Ho 8 posizioni quindi prima sistemo gli zeri(Perchè sono meno)
+
+%inserire disegno
+E mi accorgo che il primo $0$ potrò metterlo in 8 posizioni ed il secondo in 7. Il numero di sequene sarà quindi uguale a $8\cdot7$
+
+Però allo stesso tempo lo $0_1$ posso scambiarlo di posizione con lo $0_2$
+
+Avrò quindi che il mio numero di sequenze sarà uguale a $\frac{8\cdot7}{2}$
+
+\subsection{Relazioni di ricorrenza}
+
+Vale 1 e anche questo è molto dettagliato sul libro.
+
+Se devo calcolare una formula che riguarda n oggetti è una procedura che collega il saper calcolare per n-1 oggetti con il saper calcolare per n oggetti.
+
+Ad esempio, se voglio calcolare il prodotto di n numeri naturali, ovvero il fattoriale, so che conoscendo il caso n-1 posso riutilizzarlo per calcolare il caso n.
+
+Sarà però molto importante saper definire anche un caso base.
+
+\[1\cdot2\cdot3\cdot... = n!\]
+
+%Da rivedere un po'se è quello che intendeva
+\[a_n \begin{cases}
+    \cdot a_n -1 \\
+    a_0 = 1 & \text{condizione base}
+
+\end{cases}\]
+
+Ci accorgiamo quindi che:
+
+\begin{flalign*}
+    a_1 =  1 \cdot a_0 = 1 \cdot 1 = 1 \\
+    a_2 = 2 \cdot a_n
+\end{flalign*}
 
